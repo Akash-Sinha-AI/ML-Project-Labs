@@ -4,6 +4,12 @@ WORKDIR /workspace
 
 # Install the RunPod serverless SDK
 RUN pip install --no-cache-dir runpod
+	runpod \
+	transformers \
+	sentencepiece \
+	accelerate \
+	scipy \
+	scikit-learn
 
 # Copy worker script
 COPY handler.py /workspace/handler.py
