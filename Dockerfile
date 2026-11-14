@@ -5,7 +5,7 @@ WORKDIR /workspace
 # Install RunPod SDK and ML lab libraries
 RUN pip install --no-cache-dir \
     runpod \
-    transformers \
+    "transformers>=4.44.0,<4.45.0" \
     sentencepiece \
     accelerate \
     scipy \
